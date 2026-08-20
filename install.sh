@@ -30,7 +30,8 @@ if [ ! -f "./netinstall-cli" ]; then
     (
         echo "10" ; echo "# Подключение к серверам MikroTik..."
         # Скачиваем официальную стабильную CLI утилиту x86_64
-        curl -L "https://mikrotik.com" -o netinstall.tar.gz
+        curl -L "https://download.mikrotik.com/routeros/7.24/netinstall-7.24.tar.gz" -o netinstall.tar.gz
+
         
         echo "60" ; echo "# Распаковка компонентов..."
         tar -xzf netinstall.tar.gz netinstall-cli
